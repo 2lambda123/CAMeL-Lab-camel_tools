@@ -24,7 +24,6 @@ version = "2.0"
 # The full version, including alpha/beta/rc tags
 release = "2.0.0.dev0"
 
-
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -71,7 +70,6 @@ exclude_patterns = []
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -100,12 +98,10 @@ html_static_path = ["_static"]
 #
 # html_sidebars = {}
 
-
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = "camel_tools_doc"
-
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -137,13 +133,12 @@ latex_documents = [
     ),
 ]
 
-
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, "camel_tools", "camel_tools Documentation", [author], 1)]
-
+man_pages = [(master_doc, "camel_tools", "camel_tools Documentation", [author],
+              1)]
 
 # -- Options for Texinfo output ----------------------------------------------
 
@@ -163,7 +158,6 @@ texinfo_documents = [
     ),
 ]
 
-
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
@@ -180,7 +174,6 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ["search.html"]
-
 
 # -- Extension configuration -------------------------------------------------
 

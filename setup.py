@@ -25,10 +25,10 @@ import sys
 
 from setuptools import setup
 
-VERSION_FILE = os.path.join(os.path.dirname(__file__), "camel_tools", "VERSION")
+VERSION_FILE = os.path.join(os.path.dirname(__file__), "camel_tools",
+                            "VERSION")
 with open(VERSION_FILE, encoding="utf-8") as version_fp:
     VERSION = version_fp.read().strip()
-
 
 CLASSIFIERS = [
     "Development Status :: 5 - Production/Stable",
@@ -53,10 +53,8 @@ CLASSIFIERS = [
     "Topic :: Text Processing :: Linguistic",
 ]
 
-DESCRIPTION = (
-    "A suite of Arabic natural language processing tools developed "
-    "by the CAMeL Lab at New York University Abu Dhabi."
-)
+DESCRIPTION = ("A suite of Arabic natural language processing tools developed "
+               "by the CAMeL Lab at New York University Abu Dhabi.")
 
 README_FILE = os.path.join(os.path.dirname(__file__), "README.rst")
 with open(README_FILE, "r", encoding="utf-8") as version_fp:
@@ -83,7 +81,9 @@ INSTALL_REQUIRES = [
     "muddler",
 ]
 
-INSTALL_REQUIRES_NOT_WINDOWS = ['camel-kenlm >= 2024.5.6 ; platform_system!="Windows"']
+INSTALL_REQUIRES_NOT_WINDOWS = [
+    'camel-kenlm >= 2024.5.6 ; platform_system!="Windows"'
+]
 
 if sys.platform != "win32":
     INSTALL_REQUIRES.extend(INSTALL_REQUIRES_NOT_WINDOWS)
@@ -115,13 +115,20 @@ setup(
     include_package_data=True,
     entry_points={
         "console_scripts": [
-            ("camel_transliterate=" "camel_tools.cli.camel_transliterate:main"),
-            ("camel_arclean=" "camel_tools.cli.camel_arclean:main"),
-            ("camel_morphology=" "camel_tools.cli.camel_morphology:main"),
-            ("camel_dediac=" "camel_tools.cli.camel_dediac:main"),
-            ("camel_word_tokenize=" "camel_tools.cli.camel_word_tokenize:main"),
-            ("camel_diac=" "camel_tools.cli.camel_diac:main"),
-            ("camel_data=" "camel_tools.cli.camel_data:main"),
+            ("camel_transliterate="
+             "camel_tools.cli.camel_transliterate:main"),
+            ("camel_arclean="
+             "camel_tools.cli.camel_arclean:main"),
+            ("camel_morphology="
+             "camel_tools.cli.camel_morphology:main"),
+            ("camel_dediac="
+             "camel_tools.cli.camel_dediac:main"),
+            ("camel_word_tokenize="
+             "camel_tools.cli.camel_word_tokenize:main"),
+            ("camel_diac="
+             "camel_tools.cli.camel_diac:main"),
+            ("camel_data="
+             "camel_tools.cli.camel_data:main"),
         ],
     },
     url="https://github.com/CAMeL-Lab/CAMeL_Tools",
