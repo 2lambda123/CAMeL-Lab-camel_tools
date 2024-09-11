@@ -24,9 +24,9 @@
 
 
 import os
-from setuptools import setup
 import sys
 
+from setuptools import setup
 
 VERSION_FILE = os.path.join(os.path.dirname(__file__), "camel_tools", "VERSION")
 with open(VERSION_FILE, encoding="utf-8") as version_fp:
